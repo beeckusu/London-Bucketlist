@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>template</title>
+
+<style type="text/css"></style>
+<link rel="stylesheet" href="standard1" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+</script>
+</head>
+<body ng-app="">
+<div id="wrapper">
+<div id="header">
+<h1><img style="width: 990px; height: 195px;" alt="The London Bucketlist - Banner" title="The London Bucketlist - Banner" src="images/banner.png"></h1>
+<div id="menubar">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="index.html#">Restaurants</a>
+<ul>
+<li><a href="restaurants/food.html">Food</a></li>
+<li><a href="restaurants/drinks.html">Drinks</a></li>
+<li><a href="restaurants/desserts.html">Desserts</a></li>
+</ul>
+</li>
+<li><a href="index.html#">Community Areas</a>
+<ul>
+<li><a href="community/malls.html">Shopping
+Malls</a></li>
+<li><a href="community/parks.html">Parks</a></li>
+</ul>
+</li>
+<li><a href="index.html#">Entertainment</a>
+<ul>
+<li><a href="entertainment/activities.html">Physical
+Activities</a></li>
+<li><a href="entertainment/gaming.html">Gaming</a></li>
+<li><a href="entertainment/clubs.html">Clubs</a></li>
+</ul>
+</li>
+<li><a href="references.html">References</a></li>
+</ul>
+</div>
+</div>
+<div id="content">Content<br>
+</div>
+<div ng-include="'sidebar.html'"><br>
+</div>
+<div ng-include="'footer.html'"></div>
+<div id="clear"></div>
+</div>
+</body></html>

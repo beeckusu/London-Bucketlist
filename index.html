@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>The London Bucketlist - Home</title>
+
+<link rel="stylesheet" href="standard1" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+</script>
+<script type="text/javascript">
+<!--
+var image1=new Image()
+image1.src="images/index_slideshow_ozen.png"
+var image2=new Image()
+image2.src="images/index_slideshow_forest.png"
+var image3=new Image()
+image3.src="images/index_slideshow_concert.png"
+var image4=new Image()
+image4.src="images/index_slideshow_cityhall.png"
+//-->
+</script></head>
+<body ng-app="">
+<div id="wrapper">
+<div id="header"><img style="width: 990px; height: 195px;" alt="The London Bucketlist - Banner" title="The London Bucketlist - Banner" src="images/banner.png"><br>
+<div id="menubar">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="#">Restaurants</a>
+<ul>
+<li><a href="restaurants/food.html">Food</a></li>
+<li><a href="restaurants/drinks.html">Drinks</a></li>
+<li><a href="restaurants/desserts.html">Desserts</a></li>
+</ul>
+</li>
+<li><a href="#">Community Areas</a>
+<ul>
+<li><a href="community/malls.html">Shopping
+Malls</a></li>
+<li><a href="community/parks.html">Parks</a></li>
+</ul>
+</li>
+<li><a href="#">Entertainment</a>
+<ul>
+<li><a href="entertainment/activities.html">Physical
+Activities</a></li>
+<li><a href="entertainment/gaming.html">Gaming</a></li>
+<li><a href="entertainment/clubs.html">Clubs</a></li>
+</ul>
+</li>
+<li><a href="references.html">References</a></li>
+</ul>
+</div>
+</div>
+<div id="content"><br>
+<div style="text-align: center;">
+<h1>Welcome to The London Bucketlist!</h1>
+<img title="London at Night" style="border: 2px solid ; width: 500px; height: 200px;" alt="London at Night" src="images/index_nights.png"><br>
+</div>
+<br>
+London, known as "The Forest City", is a thriving city with many
+exciting options for making memorable nights! Whether it be grabbing
+dinner with a significant other or planning a night out with your close
+friends, The London Bucketlist is here to list all your options to make
+it easier to plan that perfect night out! With Hotspots ranging from
+restaurants to physical activities, we're bound to have something that
+would liven up your night!<br>
+<br>
+<br>
+<div style="text-align: center;">
+<a href="javascript:slidelink()"><img style="border: 2px solid ; width: 500px; height: 200px;" alt="Ozen Korea" title="Ozen Korea" src="images/index_slideshow_ozen.png" name="slide"></a>
+<script type="text/javascript">
+<!--
+//variable that will increment through the images
+var step=1
+var whichimage=1
+function slideit(){
+//if browser does not support the image object, exit.
+if (!document.images)
+return
+document.images.slide.src=eval("image"+step+".src")
+whichimage=step
+if (step<4)
+step++
+else
+step=1
+//call function "slideit()" every 2.5 seconds
+setTimeout("slideit()",2500)
+}
+slideit()
+function slidelink() {
+if (whichimage==1) {
+window.location="restaurants/food.html"
+alt="Ozen Korea"
+window.title="Ozen Korea"
+}
+else if (whichimage==2) {
+window.location="community/parks.html"
+window.alt="The Forest City"
+window.title="The Forest City"
+}
+else if (whichimage==3){
+window.location="entertainment/clubs.html"
+window.alt="Concert Hall"
+window.title="Concert Hall"
+}
+else if (whichimage==4) {
+window.location="https://www.london.ca/city-hall/Pages/default.aspx"
+window.alt="London City Hall"
+window.title="London City Hall"
+}
+}
+//-->
+</script><br>
+</div>
+<br>
+Want to recommend a new Hotspot to us? Fill out <a target="_blank" href="http://cs2033.gaul.csd.uwo.ca/%7Eglu23/assign2/form.html">this
+form</a>!<br>
+<br>
+Visit our blog for in-depth reviews and
+possible plans for your night!<br>
+<div style="text-align: center;"><a target="_blank" href="https://cs2033glu23.wordpress.com/"><img style="border: 2px solid ; width: 250px; height: 167px;" alt="Group of friends" title="Visit our blog!" src="images/bigstock-Group-Of-Friends-Having-Fun-To-58863764.jpg"></a><br>
+<a href="https://cs2033glu23.wordpress.com/">The London
+Bucketlist Blog</a><br>
+</div>
+<br>
+</div>
+<div ng-include="'sidebar_index.html'"><br>
+</div>
+<div ng-include="'footer.html'"></div>
+<div id="clear"></div>
+</div>
+</body></html>
